@@ -1,0 +1,37 @@
+{
+    "name": "linaresdev/hydra",
+    "description": "Backend corporativo",
+    "keywords": ["laravel","core","api"],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Ing. Ramón A Linares Febles",
+            "email": "rlinares4381@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/prompts": "^0.1.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hydra\\": "System/",
+            "Hydra\\Http\\": "Http"        
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hydra\\Core\\Provider\\CoreServiceProvider"
+            ],
+            "aliases": {
+                "Malla": "Hydra\\Core\\Facade\\Malla"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
