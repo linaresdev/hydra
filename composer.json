@@ -1,6 +1,6 @@
 {
     "name": "linaresdev/hydra",
-    "description": "Backend corporativo",
+    "description": "Backend Corporate",
     "keywords": ["laravel","core","api"],
     "license": "MIT",
     "type": "package",
@@ -17,7 +17,7 @@
     "autoload": {
         "psr-4": {
             "Hydra\\": "System/",
-            "Hydra\\Http\\": "Http"        
+            "Hydra\\Http\\": "Http/"        
         }
     },
     "config": {
@@ -29,7 +29,7 @@
                 "Hydra\\Core\\Provider\\CoreServiceProvider"
             ],
             "aliases": {
-                "Malla": "Hydra\\Core\\Facade\\Malla"
+                "Malla": "Hydra\\Core\\Facade\\Hydra"
             }
         }
     },
